@@ -1,0 +1,92 @@
+div{
+    margin: 5px;
+}
+
+.vertical_spacing{
+    margin-top: 30px;
+}
+
+
+button{
+    cursor: pointer;
+}
+
+.center_expanding_hover{
+    margin-left: 20px;
+    margin-right: 20px;
+
+    transition: margin 0.5s, padding 0.5s;
+}
+.center_expanding_hover:hover{
+    margin-left: 5px;
+    margin-right: 5px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.right_expanding_hover{
+    width: 75px;
+
+    text-align: left;
+
+    transition: width 0.5s, padding 0.5s;
+}
+.right_expanding_hover:hover{
+    width: 100px;
+
+    padding-right: 40px;
+}
+
+.levitating_hover{
+    transition: margin 0.5s, box-shadow 0.5s;
+}
+
+.levitating_hover:hover{
+    margin-top: 5px;
+    margin-left: 10px;
+
+    box-shadow: -10px -5px 5px rgb(0, 0, 0, 0.25);
+}
+
+.jonas_button{
+    padding-left: 15px;
+    padding-right: 15px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-color: white;
+    
+    font-family: Nabla;
+
+    border: 2px solid crimson;
+    border-radius: 10px;
+
+    transition: 0.5s;
+}
+.jonas_button:hover{
+    background-color: crimson;
+    color: white;
+}
+
+.medium_rounded{
+    padding-left: 15px;
+    padding-right: 15px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border: hidden;
+    border-radius: 10px;
+}
+
+.blue{
+    background-color: dodgerblue;
+    color: white;
+}
+
+.green{
+    background-color: rgb(42, 150, 0);
+    color: white;
+}
