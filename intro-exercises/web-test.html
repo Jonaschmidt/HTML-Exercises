@@ -1,0 +1,137 @@
+<!--
+Syntax of a style:
+
+<style>
+  CSS_selector{
+    CSS_property: CSS_value;
+  }
+<\style>
+-->
+<style>
+  .click_me_button{
+    margin-left: 100px;
+
+    background-color: lightpink;
+    color: white;
+
+    border-style: hidden;
+    border-width: 2px;
+    border-radius: 100px;
+
+    height: 50px;
+    width: 100px;
+
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    font-stretch: extra-expanded;
+
+    cursor: pointer;
+
+    transition: opacity 1s;
+  }
+  .click_me_button:hover{
+    border-style: solid;
+    border-color: rgb(76, 76, 185);
+
+    opacity: 0.5;
+  }
+  .click_me_button:active{
+    opacity: 0.25;
+  }
+
+  .this_is_a_button_button:hover{
+    box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.15);
+  }
+
+  .no_padding_button{
+    vertical-align: top;
+
+    margin: 20px;
+
+    background-color: aqua;
+  }
+
+  .much_padding_button{
+    margin: 20px;
+
+    padding: 25px;
+
+    background-color: blueviolet;
+  }
+
+  .variable_padding_button{
+    margin: 20px;
+
+    padding-left: 50px;
+    padding-right: 10px;
+    padding-top: 25px;
+    padding-bottom: 8px;
+
+    background-color: greenyellow;
+  }
+
+  .suck_button{
+    height: 10px;
+    width: 200px;
+
+    background-color: burlywood;
+  }
+
+  div{
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    border-color: red;
+  }
+</style>
+
+<div>
+  <p>
+    Hello World
+  </p>
+</div>
+
+<p>
+  This is a new paragraph
+  <button class="click_me_button">
+    Click me!
+  </button>
+</p>
+
+
+<button class="this_is_a_button_button">
+  This is a Button
+</button>
+
+<a href="https://www.youtube.com/watch?v=XcrLSSlNZGs&list=LLIYtZfatCkQCao9LRY-1Xzw&index=4" target="_blank">
+  Click here for a side of smooth
+</a>
+
+
+<!-- height and weight is assigned automatically if not manually, which helps text fit inside
+    padding can be used to pad out the space around the letters to the automatically assigned size
+    this is demonstrated in these buttons
+  
+    the browser tries to align buttons by text
+    this can be undone by using vertical-align
+  -->
+<div>
+  <button class="no_padding_button">
+    THIS BUTTON HAS NO PADDING, AND IS VERTICALLY ALIGNED
+  </button>
+
+  <button class="much_padding_button">
+    THIS BUTTON HAS MUCH PADDING!
+  </button>
+
+  <button class="variable_padding_button">
+    THIS BUTTON HAS WEIRD PADDING!
+  </button>
+
+  <button class="suck_button">
+    THIS BUTTON SUCKS BECAUSE I ASSIGNED HEIGHT AND WIDTH MANUALLY
+  </button>
+</div>

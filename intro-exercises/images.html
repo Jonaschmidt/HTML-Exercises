@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Image Exercise</title>
+        <style>
+            .foo{
+                /*height adjusts with width,
+                UNLESS height is adjusted manually*/
+                width: 300px;
+            }
+
+            .bar{
+                height: 100px;
+                width: 100px;
+
+                object-fit: cover;
+                object-position: right;
+            }
+
+            .img_border{
+                border-width: 2px;
+                border-style: solid;
+                border-color: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <img class="foo img_border" src="images/OtherWorld.png">
+        <img class="bar img_border" src="images/OtherWorld.png">
+    </body>
+</html>
